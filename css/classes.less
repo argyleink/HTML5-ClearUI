@@ -1,0 +1,38 @@
+.drag {
+	-webkit-transition: all 0 cubic-bezier(0,0,0.2,1) !important;
+}
+
+.dragged {
+	z-index: 999 !important;
+	box-shadow: 0 1px 8px rgba(0,0,0,.3);
+	-webkit-transition: all 0 cubic-bezier(0,0,0.2,1) !important;
+}
+
+.slow {
+	-webkit-transition: all .35s ease-in-out !important;
+}
+
+.medium {
+	-webkit-transition: all .25s ease-in-out !important;
+}
+
+.fast {
+	-webkit-transition: all .15s ease !important;
+}
+
+.bottom {
+	z-index: 999 !important;
+	-webkit-transform-origin: 50% 0%;
+	-webkit-transform: rotateX(-100deg);
+	opacity: .3;
+}
+
+.top {
+	z-index: 999 !important;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-transform: rotateX(85deg);
+	margin-bottom: -60px;
+	position: relative;
+	top: -60px;
+	opacity: .3;
+}
