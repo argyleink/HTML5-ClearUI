@@ -1,4 +1,4 @@
-var http = require('http'),
+var http  = require('http'),
     fs = require('fs'),
     path = require('path'),
     mongo = require('mongoskin');
@@ -18,7 +18,7 @@ http.createServer(function(request, response) {
     }
 
 
-}).listen(process.env.PORT, process.env.IP);
+}).listen(1337, "0.0.0.0");
 console.log('server is =)');
 
 // FILE SERVER //
